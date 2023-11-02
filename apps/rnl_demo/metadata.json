@@ -1,0 +1,25 @@
+{
+  "id": "rnl_demo",
+  "name": "RedNodeLabs Demo App",
+  "shortName": "RNL Demo App",
+  "version": "0.01",
+  "description": "Demo app that includes a configurable timer",
+  "icon": "rnl_icon.png",
+  "type": "clock",
+  "tags": "clock",
+  "supports": [
+    "BANGLEJS2"
+  ],
+  "readme": "README.md",
+  "storage": [
+    {
+      "name": "rnl_demo.app.js",
+      "url": "app.js"
+    },
+    {
+      "name": "rnl_demo.img",
+      "url": "app-icon.js",
+      "evaluate": true
+    }
+  ]
+}
