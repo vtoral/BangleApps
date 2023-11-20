@@ -68,8 +68,8 @@ Bangle.on('touch',(touchside, touchdata)=>{
     clearInterval(timerinterval);
   } //else if (touchdata.y > 24 && touchdata.y < (100-10)) {
     //Bangle.buzz(40);
-    //islocked = !islocked;
-  } else if (!islocked && touchdata.y > (100+10) && touchdata.x > 88 + 10) {
+    //islocked = !islocked;}
+   else if (!islocked && touchdata.y > (100+10) && touchdata.x > 88 + 10) {
     Bangle.buzz(40);
     current_from = newtimer_right_from;
     current_to = newtimer_right_to;
