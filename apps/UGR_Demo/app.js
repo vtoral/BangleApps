@@ -62,14 +62,15 @@ function countDown() {
 }
 
 Bangle.on('touch',(touchside, touchdata)=>{
-  if (!islocked && istimeron && touchdata.y > (100+10)) {
-    Bangle.buzz(40);
-    istimeron = false;
-    clearInterval(timerinterval);
-  } //else if (touchdata.y > 24 && touchdata.y < (100-10)) {
+//  if (!islocked && istimeron && touchdata.y > (100+10)) {
+//	Bangle.buzz(40);
+//    istimeron = false;
+//    clearInterval(timerinterval);
+//  } else if (touchdata.y > 24 && touchdata.y < (100-10)) {
     //Bangle.buzz(40);
     //islocked = !islocked;}
-   else if (!islocked && touchdata.y > (100+10) && touchdata.x > 88 + 10) {
+//	else 
+	if (!islocked && touchdata.y > (100+10) && touchdata.x > 88 + 10) {
     Bangle.buzz(40);
     current_from = newtimer_right_from;
     current_to = newtimer_right_to;
