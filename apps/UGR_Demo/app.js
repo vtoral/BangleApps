@@ -130,7 +130,7 @@ var showInstructions = true;
 
 function draw() {
   g.reset();
-  if (current_value >= current_to) { g.setBgColor("#FFF"); Bangle.buzz(1000,1);}
+  if (current_value >= current_to) { g.setBgColor("#FFF");}
   else if (current_value >= current_mid) { g.setBgColor("#FF0"); }
   else if (current_value >= current_from) { g.setBgColor("#8F8"); }
   g.clearRect(0,24,176,176);
