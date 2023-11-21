@@ -130,7 +130,7 @@ var showInstructions = true;
 
 function draw() {
   g.reset();
-  if (current_value >= current_to) { g.setBgColor("#FFF");}
+  if (current_value >= current_to) { g.setBgColor("#F00");}
   else if (current_value >= current_mid) { g.setBgColor("#FF0"); }
   else if (current_value >= current_from) { g.setBgColor("#8F8"); }
   g.clearRect(0,24,176,176);
