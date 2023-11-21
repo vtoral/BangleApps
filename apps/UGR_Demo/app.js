@@ -70,7 +70,7 @@ Bangle.on('touch',(touchside, touchdata)=>{
     //Bangle.buzz(40);
     //islocked = !islocked;}
 //	else 
-	if (!islocked && touchdata.y > (100+10) && touchdata.x > 88 + 10) {
+if (!islocked && !istimeron && touchdata.y > (100+10) && touchdata.x > 88 + 10) {
     Bangle.buzz(40);
     current_from = newtimer_right_from;
     current_to = newtimer_right_to;
@@ -79,7 +79,7 @@ Bangle.on('touch',(touchside, touchdata)=>{
     if (timerinterval) clearInterval(timerinterval);
     timerinterval = setInterval(countDown, 1000);
     istimeron = true;
-  } else if (!islocked && touchdata.y > (100+10) && touchdata.x < 88 - 10) {
+  } else if (!islocked && !istimeron && touchdata.y > (100+10) && touchdata.x < 88 - 10) {
     Bangle.buzz(40);
     current_from = newtimer_left_from;
     current_to = newtimer_left_to;
